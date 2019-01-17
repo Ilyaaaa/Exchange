@@ -22,14 +22,64 @@
         android:layout_height="match_parent"
         android:visibility="gone">
 
-        <Button
-            android:id="@+id/sign_out_btn"
+
+        <EditText
+            android:id="@+id/num_field"
+            android:hint="@string/number"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/spinner1" />
+
+        <Spinner
+            android:id="@+id/spinner1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="@dimen/margin"
+            app:layout_constraintTop_toTopOf="@id/num_field"
+            app:layout_constraintLeft_toRightOf="@id/num_field"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="@id/num_field"/>
+
+        <TextView
+            android:id="@+id/to_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:layout_margin="@dimen/margin"
+            app:layout_constraintTop_toBottomOf="@id/spinner1"
+            app:layout_constraintLeft_toLeftOf="@id/spinner1"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            app:layout_constraintTop_toTopOf="@id/result_view"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/result_view"/>
+
+        <EditText
+            android:id="@+id/result_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:hint="@string/result"
+            android:layout_margin="@dimen/margin"
+            app:layout_constraintTop_toBottomOf="@id/to_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/spinner2"/>
+
+        <Button
+            android:id="@+id/calc_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calc"
+            android:layout_margin="@dimen/margin"
+            app:layout_constraintTop_toBottomOf="@id/result_view" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
