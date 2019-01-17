@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exchange</string>
+    <string name="email_error">Не правильный email</string>
+    <string name="pass_error">Не правильный пароль</string>
+    <string name="pass">Пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегстрироватся</string>
+    <string name="sign_in_fail">Вход не удался</string>
+    <string name="sign_up_fail">Регистрация не удалась</string>
+    <string name="user_not_exists">Такой пользователь не существует</string>
+    <string name="wrong_pass">Не правильный пароль</string>
+    <string name="user_exists">Такой пользоавтель существует</string>
+    <string name="number">Количество</string>
+    <string name="sign_out">Выйти</string>
+    <string name="to">в</string>
+    <string name="calc">Посчитать</string>
+    <string name="result">Результат</string>
+</resources>

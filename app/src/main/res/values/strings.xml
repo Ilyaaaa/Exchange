@@ -2,7 +2,7 @@
     <string name="app_name">Exchange</string>
     <string name="email_error">Invalid email</string>
     <string name="pass_error">Invalid password</string>
-    <string name="email">Email</string>
+    <string name="email" translatable="false">Email</string>
     <string name="pass">Password</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_up">Sign up</string>
